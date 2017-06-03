@@ -5,6 +5,34 @@ import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import People from 'material-ui/svg-icons/social/people'
+import List from 'material-ui/List/List';
+import ListItem from 'material-ui/List/ListItem';
+
+
+class CandidateList extends Component{
+
+    generateCandidates(length){
+        let candidateArray = [];
+        for(let i = 0; i < length; i++){
+            candidateArray.push(<ListItem leftAvatar={ <Candidate/>}/>)
+        }
+        return candidateArray;
+    }
+
+    render(){
+        const candidateListItems = this.generateCandidates(3)
+        return(
+            <div>
+                <MuiThemeProvider>
+                <List>
+                    {candidateListItems}
+                </List>
+                </MuiThemeProvider>
+            </div>
+        )
+    }
+}
+
 
 class Candidate extends Component{
 
@@ -46,4 +74,4 @@ class CandidateInformation extends Component{
 }
 
 
-export default Candidate
+export default CandidateList

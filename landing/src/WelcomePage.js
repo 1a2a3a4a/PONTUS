@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 //material-ui stuff
@@ -10,7 +9,9 @@ class WelcomePage extends Component {
     return (
       <div className="WelcomePage">
         <div>
+
           <RaisedButton label="Default" />
+
         </div>
       </div>
     );

@@ -14,15 +14,22 @@ class CandidateList extends Component{
     generateCandidates(length){
         let candidateArray = [];
         for(let i = 0; i < length; i++){
-            candidateArray.push(<ListItem leftAvatar={ <Candidate/>}/>)
+            candidateArray.push(<ListItem  key={i} leftAvatar={ <Candidate/>}/>)
         }
         return candidateArray;
     }
 
     render(){
-        const candidateListItems = this.generateCandidates(3)
+        const candidateListItems = this.generateCandidates(10)
+
+        const scrollBar = {
+            overflow: 'scroll',
+            height: '30em',
+            overflowX:'hidden',
+    };
+
         return(
-            <div>
+            <div style={scrollBar}>
                 <MuiThemeProvider>
                 <List>
                     {candidateListItems}

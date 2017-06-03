@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import CandidateList from './CandidateList'
+
 /*
 * TODO:
 *       search bar
@@ -12,27 +13,25 @@ import CandidateList from './CandidateList'
 *       See candidates who submitted an application
  */
 class Employer extends Component{
+
     render(){
         const inputStyle = {
-            width: '130px',
+            width: '20em',
             boxSizing: 'border-box',
             border: '2px solid #ccc',
             borderRadius: '4px',
             fontSize:'16px',
             backgroundColor: 'white',
-            backgroundImage: "url('https://www.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png')",
-            backgroundPosition: '10px 10px',
             backgroundRepeat: 'no-repeat',
             padding: '12px 20px 12px 40px',
             webkitTransition: 'width 0.4s ease-in-out',
-            transition: 'width 0.4s ease-in-out'',
+            transition: 'width 0.4s ease-in-out',
+            marginLeft: '10em',
         };
 
 
         return(
             <div>
-
-
                 <form>
                     <input type="text" name="search" placeholder="Search.." style={inputStyle}/>
                 </form>

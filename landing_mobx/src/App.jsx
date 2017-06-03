@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
-
+import Employer from './employer/Employer'
 @observer
 class App extends Component {
   render() {
@@ -10,7 +10,8 @@ class App extends Component {
         <button onClick={this.onReset}>
           Seconds passed: {this.props.appState.timer}
         </button>
-        <DevTools />
+        <DevTools/>
+          <Employer/>
       </div>
     );
   }

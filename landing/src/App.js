@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import StartPage from './StartPage/StartPage'
+import WelcomePage from './WelcomePage'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 injectTapEventPlugin();
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <MuiThemeProvider>
-          <StartPage/>
+          <WelcomePage/>
         </MuiThemeProvider>
       </div>
     );

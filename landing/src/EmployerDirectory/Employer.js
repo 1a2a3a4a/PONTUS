@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import 'employerCSS.css';
+import CandidateList from './CandidateList'
 /*
 * TODO:
 *       search bar
@@ -23,8 +24,6 @@ class Employer extends Component{
         )
     }
 }
-
-
 
 
 export default Employer;

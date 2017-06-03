@@ -13,7 +13,7 @@ class App extends Component {
         <MuiThemeProvider>
           <WelcomePage/>
         </MuiThemeProvider>
-          <Candidate/>
+         
       </div>
     );
   }
